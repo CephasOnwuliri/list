@@ -1,0 +1,10 @@
+def calculate_discount(price,discount_percent):
+    price=int(input("`Enter the price of the product:"))
+    discount_percent=int(input("Enter the discount percentage:"))
+    if discount_percent>=20:
+        discount=price*discount_percent/100
+        final_price=price-discount
+        print(f"Your discount is {discount} and the final price is {final_price}")
+    else:
+        print(f"You're not eligible for the discount, your final price is {price}")
+        
