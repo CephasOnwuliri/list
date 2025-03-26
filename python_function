@@ -9,7 +9,7 @@ def calculate_discount(price,discount_percent):
         final_price=price-discount
         return (discount,final_price)
     else:
-        else return (0,price)
+         return (0,price)
 
 try:
     price=float(input("`Enter the price of the product:"))
@@ -21,9 +21,9 @@ try:
     else:
         discount,final_price=calculate_discount(price,discount_percent)#Assigninf the return values to the variables(tuple unpacking mechanism)
         if discount==0 or discount_percent<20:
-            print(f"No discount is applied and the final price is ${final_price,2f}")
+            print(f"No discount is applied and the final price is ${final_price:.2f}")
         else:
-            print(f"Your discount amount is ${discount,2f} and the final price is ${final_price,2f}")
+            print(f"Your discount amount is ${discount:.2f} and the final price is ${final_price:2f}")
 except ValueError:
     print("Please enter a valid number")
 
